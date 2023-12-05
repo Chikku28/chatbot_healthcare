@@ -1,0 +1,8 @@
+import random
+
+def generate_session_key():
+    return ''.join([str(random.randint(0, 9)) for _ in range(16)])
+
+# Example of generating a 16-digit session key
+session_key = generate_session_key()
+print(f"Generated Session Key: {session_key}")
